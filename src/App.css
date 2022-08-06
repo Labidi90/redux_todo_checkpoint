@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Work+Sans:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 75, 204) 30%,
+    rgb(36, 115, 252) 70%
+  );
+  overflow: hidden;
+}
+
+.App {
+  background: lightcyan;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
+  margin: 2.5% auto;
+  min-height: 90vh;
+  border-radius: 20px;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: bold !important;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.add {
+  width: 60% !important;
+}
+
+input {
+  outline: none;
+  border: 2px solid black;
+  padding: 14px 32px 14px 16px;
+  background: white;
+  border-radius: 10px 0 0 10px;
+  color: black;
+}
+.add button {
+  outline: none;
+  border: none;
+  padding: 16px;
+  background: rgb(0, 75, 204);
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+}
+.task {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55vw;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 15px auto;
+  background: white !important;
+  height: 50px;
+  padding: 10px 10px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.task button {
+  margin-right: 10px;
+  text-align: center;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  width: 80px;
+  height: 30px;
+  transition: all 0.5s;
+}
+.task button:hover {
+  background: lightskyblue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter {
+  margin-top: 20px;
+}
+
+i {
+  padding: 1rem;
+  cursor: pointer;
+}
